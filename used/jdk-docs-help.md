@@ -1,4 +1,4 @@
-### 引言
+
 
 本人有志于JDK8的学习，从源码入手更加深入的理解Java代码，理解其中的数据结构及算法。作为目前使用最为广泛的语言之一，其源码涉及诸多先进的代码实现思想，如并发问题等，很多开源框架的基本思想都是来源于JDK或借鉴或一定程度的体现等。如Spring、MyBatis等。
 
@@ -46,7 +46,7 @@ java-API文档windows版：[CSND下载链接](https://download.csdn.net/download
 
 这里采用`git clone`
 
-```
+```bash
 git clone https://gitee.com/qiushunji/jdk-8u291-docs-api.git
 ```
 
@@ -54,17 +54,14 @@ git clone https://gitee.com/qiushunji/jdk-8u291-docs-api.git
 
 2、访问`index.html`
 
-```
 http://zayl.top/jdk-8u291-docs-api/api/index.html
-```
 
 如果是下载到压缩包的话，解压就行了。
 
 <br>
 
+<br>
 
-
-<hr>
 
 参与网站部署使用的平台：`centos linux 7`
 

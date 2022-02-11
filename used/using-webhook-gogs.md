@@ -63,6 +63,8 @@ git clone https://gitee.com/qiushunji/git-webhook.git
 
 <br>
 
+
+
 #### 2、安装服务
 
 ```
@@ -73,6 +75,8 @@ npm install
 **注意：`-bash: npm: command not found`表示没有安装node.js，请事先[安装Node.js](http://zayl.top/about-install/#/docs/linux-install-nodejs)**
 
 <br>
+
+
 
 #### 3、修改配置文件config.js
 
@@ -90,6 +94,8 @@ module.exports = {
 };
 
 ```
+
+<br>
 
 
 
@@ -113,6 +119,8 @@ echo "changing permissions..."
 chown -R $WEB_USER:$WEB_USERGROUP $WEB_PATH
 echo "Finished."
 ```
+
+<br>
 
 
 
@@ -140,6 +148,8 @@ ln -s /home/software/nodejs/bin/pm2 /usr/local/bin
 
 <br>
 
+
+
 ### 三、Gogs添加WebHook
 
 URL：`http://www.xxx.com:1314/git/webhook`
@@ -149,6 +159,8 @@ URL：`http://www.xxx.com:1314/git/webhook`
 点击激活即可看到测试结果：
 
 **出现绿色的勾勾标识成功**
+
+<br>
 
 <br>
 

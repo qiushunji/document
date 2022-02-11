@@ -1,0 +1,309 @@
+.app-nav li p a {
+	font-size: 18px;
+}
+
+.github-corner {
+	position: absolute;
+	z-index: 999999;
+	top: 0;
+}
+
+.search {
+	margin-top: 0px;
+	padding: 13px !important;
+	border-bottom: 1px solid #eee !important;
+}
+
+/* 侧边栏样式风格 */
+aside.sidebar {
+	margin-top: 4px;
+	padding-left: 10px;
+	font-size: 18px;
+}
+
+
+/* 设置全局字体 */
+body {
+	/* font-size: 15px !important; */
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important
+}
+
+#main h2 span {
+	color: #18b566 !important;
+}
+
+#main h3 span {
+	color: #000000 !important;
+}
+
+#main h4 span {
+	color: #089acc !important;
+}
+
+.markdown-section code {
+	border-radius: 2px;
+	font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+	font-size: 16px !important;
+	margin: 0 2px;
+	padding: 3px 5px;
+	white-space: nowrap;
+	/* border: 1px solid #282c34; */
+	/* color: rgb(184, 101, 208); */
+}
+
+.markdown-section>div>img,
+.markdown-section pre {
+	box-shadow: 2px 2px 20px 6px rgb(255, 255, 255) !important;
+}
+
+.markdown-section a:not(:hover) {
+	text-decoration: none;
+}
+
+.markdown-section blockquote {
+	background-color: #f3f4f3;
+}
+
+.markdown-section p.tip,
+.markdown-section tr:nth-child(1n) {
+	font-size: 16px !important;
+}
+
+.markdown-section h1 {
+	margin: 3rem 0 2rem 0;
+}
+
+.markdown-section h2 {
+	margin: 2rem 0 1rem 0;
+}
+.markdown-section h3 {
+	margin: 1.5rem 0 0.8rem 0;
+}
+.markdown-section h4 {
+	margin: 1.2rem 0 0.6rem 0;
+}
+.markdown-section h5 {
+	margin: 1rem 0 0.4rem 0;
+}
+
+img,
+pre {
+	border-radius: 5px;
+}
+img{
+	display:block;
+	position:relative;
+	margin:auto;
+}
+
+/*添加代码块复制按钮样式*/
+.docsify-copy-code-button {
+	background: #939393 !important;
+	color: #FFFFFF !important;
+	font-size: 10px !important;
+}
+
+::after {
+	color: #9da2fd !important;
+	font-size: 10px !important;
+}
+
+.markdown-section>p {
+	font-size: 16px !important;
+	width: 100% !important;
+}
+
+/* 代码段 */
+.markdown-section pre>code {
+	border-radius: 2px;
+	color: #ced0cf !important;
+	font-family: 'Inconsolata', consolas, "PingFang SC", "Microsoft YaHei", monospace !important;
+	background-color: #212121 !important;
+	font-size: 15px !important;
+	white-space: pre !important;
+	line-height: 1.5 !important;
+	-moz-tab-size: 4 !important;
+	-o-tab-size: 4 !important;
+	tab-size: 4 !important;
+}
+
+/*代码块*/
+p code {
+	font-family: 'Inconsolata', consolas, "PingFang SC", "Microsoft YaHei", monospace !important;
+	font-weight: 500;
+}
+
+ol,
+ul,
+li {
+	line-height: 1.5 !important;
+	font-size: 16px !important;
+}
+
+@media (min-width:600px) {
+	.markdown-section pre>code {
+		font-size: 15px !important;
+		letter-spacing: 1.1px !important;
+	}
+}
+
+@media (max-width:600px) {
+	.markdown-section pre>code {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 16px !important;
+	}
+
+	pre:after {
+		content: "" !important;
+	}
+}
+
+section.cover h1 {
+	margin: 0;
+}
+
+pre {
+	background-color: #212121 !important;
+}
+
+@media (min-width:600px) {
+	pre code {
+		/*box-shadow: 2px 1px 20px 2px #aaa;*/
+		/*border-radius: 10px !important;*/
+		padding-left: 20px !important;
+	}
+
+}
+
+@media (max-width:600px) {
+	pre {
+		padding-left: 3px !important;
+		padding-right: 3px !important;
+		margin-left: -20px !important;
+		margin-right: -20px !important;
+		box-shadow: 0px 0px 20px 0px #f7f7f7 !important;
+	}
+
+	/*代码块复制按钮默认隐藏*/
+	.docsify-copy-code-button {
+		display: none;
+	}
+
+	.advertisement {
+		display: none;
+	}
+
+}
+
+.markdown-section pre {
+	padding-left: 0 !important;
+	padding-right: 0px !important;
+}
+
+.markdown-section {
+	margin: 0 12% 0 12% !important;
+	max-width: 76%;
+}
+
+/*修改代码块代码颜色显示*/
+.token.directive.keyword {
+	color: #4faee2 !important;
+}
+
+.token.keyword {
+	color: #c678dd !important;
+}
+
+.token.comment {
+	color: #737c8b !important;
+}
+
+.token.tag {
+	color: #a589ad !important;
+}
+
+.token.attr-name {
+	color: #de916c !important;
+}
+
+.token.attr-value {
+	color: #4faee2 !important;
+}
+
+.token.macro.property {
+	color: #4faee2 !important;
+}
+
+.token.function {
+	color: #e6b456 !important;
+}
+
+.token.string {
+	color: #98b755 !important;
+}
+
+.token.punctuation {
+	color: #c0c3c1 !important;
+}
+
+.token.number {
+	color: #c0c3c1 !important;
+}
+
+a.section-link {
+	font-size: .9rem !important;
+}
+
+.advertisement {
+	position: fixed;
+	right: 20px;
+	top: 100px;
+	width: 110px;
+	box-shadow: -1px 0 2px 0px #c5ebda;
+	padding: 10px;
+	z-index: 99;
+	background-color: #fff;
+	text-align: center;
+}
+
+.advertisement p,
+h4 {
+	margin: 0;
+	padding: 0;
+}
+
+.advertisement .Tencent_code h4 {
+	font-size: 15px;
+	color: #25a46a;
+	margin-bottom: 10px;
+}
+
+/*结束文章符号*/
+.over {
+	width: 40px;
+	height: 40px;
+	border: 1px solid #000001;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	margin: 20px auto 5px;
+	text-shadow: 0 0 black;
+}
+/* 表格 */
+.markdown-section table{
+    text-align:center;
+	display: inline-table !important;
+	background-color: rgba(0,0,0,0);
+}
+
+/* 页脚样式*/
+.footer-bg{
+	padding: 20px 0 20px 0;
+	margin: 0 auto;
+}
+.footer-a{
+	text-decoration:none !important;
+	color:#34495e !important;
+	font-weight: 500;
+}

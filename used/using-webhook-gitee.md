@@ -1,5 +1,3 @@
-### 引言
-
 大型项目协同开发常使用Git，渐渐的一些中小型的公司开始效仿，现如今成为一个普遍使用的代码仓库，为了满足开发需求，git仓库功能也逐渐多样化，如静态网页托管、代码质量分析、WebHook等。今天主要来讲讲WebHook的使用。
 
 - ##### WebHook
@@ -63,6 +61,8 @@ git clone https://gitee.com/qiushunji/GiteeWebHook.git
 git clone git@gitee.com:qiushunji/GiteeWebHook.git
 ```
 
+<br>
+
 
 
 #### 2、安装服务
@@ -72,6 +72,8 @@ npm install
 ```
 
 **注意：`-bash: npm: command not found`表示没有安装node.js，请事先[安装Node.js](http://zayl.top/about-install/#/docs/linux-install-nodejs)**
+
+<br>
 
 
 
@@ -91,6 +93,8 @@ module.exports = {
 };
 
 ```
+
+<br>
 
 
 
@@ -114,6 +118,8 @@ echo "changing permissions..."
 chown -R $WEB_USER:$WEB_USERGROUP $WEB_PATH
 echo "Finished."
 ```
+
+<br>
 
 
 
@@ -140,6 +146,8 @@ ln -s /home/software/nodejs/bin/pm2 /usr/local/bin
 再执行`pm2 install pm2-intercom`
 
 <br>
+
+
 
 ### 三、Gitee添加WebHook
 
@@ -187,6 +195,8 @@ pm2 kill
 ```
 
 <br>
+
+
 
 3、原作者使用的版本有bug，请查看你使用的这个版本是否存在这个问题。
 

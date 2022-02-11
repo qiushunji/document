@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>萤火虫</title>
+		<link rel="icon" href="plugin/images/favicon.ico">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="referrer" content="no-referrer" />
+		<meta name="description" content="Description">
+		<meta name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="plugin/css/vue.min@5.2.2.min.css">
+		<link rel="stylesheet" href="plugin/css/iconfont.css">
+		<link rel="stylesheet" href="plugin/css/custom.css">
+		<link rel="stylesheet" href="plugin/css/sweetalert.min.css" />
+		<link rel="stylesheet" href="./index.css">
+	</head>
+
+
+	<body>
+		<div id="app">努力改变命运，态度改变人生</div>
+
+		<script>
+			window.$docsify = {
+				name: "Firefly",
+				nameLink: '/',
+				themeColor: '#00aaff', // 主题颜色
+				auto2top: true, //当路线改变时,滚动到屏幕的顶部
+				loadNavbar: true, //_navbar.md如果为真，则从_navbar.md文件加载navbar ，否则从指定的路径加载
+				loadSidebar: true, //_sidebar.md 如果为真，则从_sidebar.md文件加载侧边栏 ，否则从指定的路径加载
+				autoHeader: true,
+				// routerMode: 'history',
+				mergeNavbar: true, //Navbar将在小屏幕上与侧边栏合并
+				executeScript: true, //执行页面上的脚本。只解析第一个脚本标记（演示）。如果存在Vue，则默认开
+				maxLevel: 3, //最大的内容表级别
+				subMaxLevel: 2, //在自定义边栏中添加目录（TOC)
+				externalLinkTarget: '_blank', //外链打开方式：_blank表示在新标签页中打开
+				coverpage: true,
+				onlyCover: true,
+				topMargin: 90, //调整top
+				loadFooter: true, //_footer.md中加载页脚
+				formatUpdated: '{YYYY}-{MM}-{DD} {HH}:{mm}',
+				basePath:'https://cdn.jsdelivr.net/gh/qiushunji/document@main/',
+				search: {
+					paths: 'auto',
+					placeholder: '',
+					noData: '找不到结果',
+					depth: 6,
+					maxAge: 86400000,
+				},
+				copyCode: {
+					buttonText: '复制',
+					errorText: '失败',
+					successText: '成功'
+				},
+				plugins: [ // 自定义插件 
+					function(hook, vm) {
+						hook.beforeEach(function(content) {
+							// 解析之前执行，初始化
+						});
+						hook.afterEach(function(html) {
+							//解析内容之后执行,一半用于页脚
+						});
+						hook.doneEach(function() {
+							//数据全部加载完成后调用，没有参数。
+						});
+						hook.ready(function() {});
+					}
+				],
+
+			}
+		</script>
+		<script src="plugin/js/docsify@4.12.2.min.js"></script>
+		<script src="plugin/js/search.min.js"></script>
+		<script src="plugin/js/docsify-footer.min.js"></script>
+		<script src="plugin/js/docsify-copy-code@2.1.1.min.js"></script>
+		<script src="plugin/js/zoom-image@4.12.2.min.js"></script>
+
+		<!-- 代码高亮-->
+		<script src="plugin/js/prism-c@1.26.0.min.js"></script>
+		<script src="plugin/js/prism-bash@1.26.0.min.js"></script>
+		<script src="plugin/js/prism-java@1.26.0.min.js"></script>
+		<script src="plugin/js/prism-json@1.26.0.min.js"></script>
+		<script src="plugin/js/prism-sql@1.26.0.min.js"></script>
+
+		<!-- 回到顶部功能 -->
+		<script src="plugin/js/jquery@1.10.2.min.js"></script>
+		<script src="plugin/js/jquery.goup@1.1.3.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$.goup({
+					trigger: 100,
+					bottomOffset: 52,
+					locationOffset: 25,
+					title: 'TOP',
+					titleAsText: true
+				});
+			});
+		</script>
+
+		<!-- 实现离线化 -->
+		<script>
+			if (typeof navigator.serviceWorker !== 'undefined') {
+				navigator.serviceWorker.register('plugin/js/pwa.js')
+			}
+		</script>
+
+	</body>
+</html>

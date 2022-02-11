@@ -1,5 +1,3 @@
-## 引言
-
 markdown是极为受宠的文档标记语言，极大提高开发者写文档的热情。我觉得很有必要来聊一聊这个话题，具体如何使用markdown。
 
 <br>
@@ -38,7 +36,7 @@ Android 六大数据存储方式
 
 显示效果是这样的：
 
-![image-20210529091338919](images/how-use-markdown/image-20210529091338919.png)
+![image-20210529091338919](images/using-markdown/image-20210529091338919.png)
 
 <mark>这样显示两行文字距离略宽</mark>
 
@@ -68,7 +66,7 @@ Android 六大数据存储方式
 
 后面是有两个空格符的
 
-![image-20210529091316771](images/how-use-markdown/image-20210529091316771.png)
+![image-20210529091316771](images/using-markdown/image-20210529091316771.png)
 
 <mark>这样显示两行文字距离略窄</mark>
 
