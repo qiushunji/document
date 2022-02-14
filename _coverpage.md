@@ -5,7 +5,7 @@
 - 月黑见渔灯，孤光一点萤。
 
 [GitHub](https://github.com/qiushunji/document)
-[开始阅读](#/README.md)
+[开始阅读](README.md)
 
 
 
